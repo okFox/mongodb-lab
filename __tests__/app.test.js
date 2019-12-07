@@ -10,19 +10,21 @@ describe('application routes', () => {
       });
   });
 
-  it('has a /hello post route', () => {
+  it('has a /api/colors post route', () => {
     return request(app)
-      .post('/hello')
+      .post('/api/colors')
       .send({
-        name: 'spot',
-        age: 5,
-        weight: '20 lbs'
+        name: 'bestColor',
+        red: 25,
+        green: 25,
+        blue: 25
       })
       .then(res => {
         expect(res.body).toEqual({
-          name: 'spot',
-          age: 5,
-          weight: '20 lbs'
+          name: 'bestColor',
+          red: 25,
+          green: 25,
+          blue: 25
         });
       });
   });
