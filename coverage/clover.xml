@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575679499500" clover="3.2.0">
-  <project timestamp="1575679499500" name="All files">
-    <metrics statements="16" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1" elements="20" coveredelements="12" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+<coverage generated="1575680492085" clover="3.2.0">
+  <project timestamp="1575680492085" name="All files">
+    <metrics statements="16" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2" elements="20" coveredelements="15" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
     <file name="app.js" path="/Users/sarahmayfield/alchemy/career-track/01-week/mongodb-lab/lib/app.js">
-      <metrics statements="16" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <metrics statements="16" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
       <line num="6" count="1" type="stmt"/>
@@ -16,8 +16,8 @@
       <line num="54" count="1" type="stmt"/>
       <line num="55" count="0" type="stmt"/>
       <line num="58" count="1" type="stmt"/>
-      <line num="59" count="0" type="stmt"/>
-      <line num="60" count="0" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="60" count="1" type="stmt"/>
       <line num="66" count="0" type="stmt"/>
       <line num="71" count="1" type="stmt"/>
     </file>

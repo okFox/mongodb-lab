@@ -10,9 +10,9 @@ describe('application routes', () => {
       });
   });
 
-  it('has a /api/colors post route', () => {
+  it('has a /api/post post route', () => {
     return request(app)
-      .post('/api/colors')
+      .post('/api/post')
       .send({
         name: 'bestColor',
         red: 25,
@@ -20,12 +20,12 @@ describe('application routes', () => {
         blue: 25
       })
       .then(res => {
-        expect(res.body).toEqual({
+        expect(res.body).toEqual(expect.objectContaining({
           name: 'bestColor',
           red: 25,
           green: 25,
           blue: 25
-        });
+        }));
       });
   });
 });
