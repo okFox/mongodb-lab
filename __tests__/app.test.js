@@ -3,6 +3,7 @@ const request = require('supertest');
 const app = require('../lib/app');
 require('../lib/utils/connect').connect();
 
+let bestColorId = '';
 
 describe('application routes', () => {
   it('has a home route that says hello everyone', () => {
@@ -28,6 +29,16 @@ describe('application routes', () => {
         green: 25,
         blue: 25
       }));
+      bestColorId = res.body._id;
+
     }));
+
+  it('has a route that finds by ID', () => {
+    return request(app)
+      .get(`/api/colors/${bestColorId}`)
+      .then(res => {
+        expect(res.body._id).toContain(bestColorId);
+      });
+  });
 });
 
