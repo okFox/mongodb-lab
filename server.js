@@ -1,8 +1,8 @@
 require('dotenv').config();
-
+require('./lib/utils/connect').connect();
 const app = require('./lib/app');
-require('./lib/utils/connect')();
+
 
 app.listen('7890', () => {
-  console.log('started!');
+  console.log('Server connected on port 7890');
 });
