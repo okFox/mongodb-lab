@@ -30,7 +30,6 @@ describe('application routes', () => {
         blue: 25
       }));
       bestColorId = res.body._id;
-
     }));
 
   it('has a route that finds by ID', () => {
@@ -40,5 +39,17 @@ describe('application routes', () => {
         expect(res.body._id).toContain(bestColorId);
       });
   });
+  // it('can update an entry by ID', () => {
+  //   return request(app)
+  //     .put(`/api/put/${bestColorId}`)
+  //     .send ({
+  //       'red': 200,
+  //     })
+  //     .then(res => {
+  //       console.log(res.body);
+  //       expect(res.body).toContain({red: 200});
+  //     });
+  // });
+
 });
 
